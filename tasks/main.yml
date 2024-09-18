@@ -1,2 +1,5 @@
 - name: OS specific
   include_tasks: "{{ ansible_os_family }}/main.yml"
+
+- name: certificate
+  include_tasks: "certificate/main.yml"
